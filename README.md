@@ -94,33 +94,67 @@ my-frontend/
 - Node.js v16 or higher
 - npm or yarn package manager
 
-### Setup:
+### For Development:
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/sureyogapriyanka/Incuxai-Frontend.git
+cd my-frontend
 ```
 
-2. Install dependencies:
+2. Quick setup (automatic):
+```bash
+# For Windows:
+autorun.bat
+
+# For Linux/Mac:
+chmod +x autorun.sh
+./autorun.sh
+```
+
+3. Manual setup:
 ```bash
 npm install
-```
-
-3. Run the development server:
-```bash
 npm run dev
 ```
 
-4. Open in browser:
+### For Production Deployment:
+```bash
+# For Windows:
+deploy.bat
+
+# For Linux/Mac:
+chmod +x deploy.sh
+./deploy.sh
 ```
-http://localhost:3000/register
+
+### Environment Setup:
+Create environment files based on your needs:
+- For local development: `.env.local` 
+- For production: `.env.production`
+
+Use `.env.example` as a template for required variables.
+
+Open in browser:
+```
+Development: http://localhost:3000/register
+Production: https://hektenjptselnnh-3000.ws4.app
 ```
 
 ## Environment Variables
-Create a `.env.local` file in the root directory:
-```
-NEXT_PUBLIC_API_URL=http://localhost:5000
-```
+Environment files are provided in the repository:
+- `.env.local` - Development configuration
+- `.env.production` - Production configuration
+- `.env.example` - Template for custom variables
+
+Configure according to your deployment environment.
+
+## Project Structure
+The project includes convenient automation scripts:
+- `autorun.bat`/`autorun.sh` - Quick development setup
+- `deploy.bat`/`deploy.sh` - Production deployment
+- `DEVELOPMENT.md` - Complete documentation
+- Environment configuration files
+- `.gitignore` updated to exclude sensitive local files
 
 ## Integration Notes for Other Teams
 
